@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appetizers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toolbar-placeholder"></div>
+
+    <div class="block">
+        <h2>How did Socrates' lifestyle reflect his philosophy?</h2>
+    </div>
+
+    <div class="block pastel">
+        <h2>The Party Platter</h2>
+        <p>"It’s the
+joy/happiness/wisdom/justice/well-being/blessedness/shalom/
+peace-that-passeth-to-the-edge-of-understanding of one who is
+completely himself, at ease among any kind of person—zealot, child,
+slave, poet, drunkard, whore, general, even another philosopher—and
+able to handle himself with fi nesse in any situation, even with death
+breathing down his neck." P.17</p>
+    </div>
+
+
+    <script>
+        fetch("toolbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("toolbar-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
+</html>

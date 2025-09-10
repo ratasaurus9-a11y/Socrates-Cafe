@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Menu - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Toolbar placeholder -->
+    <div id="toolbar-placeholder"></div>
+
+    <!-- Main content -->
+    <div class="block pastel">
+        <h1>Welcome to Our Restaurant!</h1>
+        <p>Click each button for a menu for that course of the meal.</p>
+        <p>We have the appetizer to refresh you on the reading, some cocktails to start some discussion, the entree to get to the heart of the chapter, and some dessert to end our culinary discussion gently.</p>
+        <p>Enjoy your meal and the philosophical journey!</p>
+
+        <p>Julian Gullett</p>
+        <p>11 SEP 2025</p>
+        <p>Lesson 8: TDHL Chapter 2</p>
+        <p>By Scott Samuelson</p>
+        <p></p>
+        <p></p>
+
+    </div>
+
+    <script>
+        fetch("toolbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("toolbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>

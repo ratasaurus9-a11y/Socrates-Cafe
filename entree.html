@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrees</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toolbar-placeholder"></div>
+
+    <div class="block">
+        <h2>The Twin Cycles</h2>
+    </div>
+    <div style="text-align:center;">
+        <img src="pictures/images.jpg" width="360" height="360" title="photo from montreal" alt="Test image">
+    </div>
+
+    <div class="block pastel">
+        <h2>Is the life unexamined worth living?</h2>
+<p><strong>"When our minds are focused on the universal we get the richest physical experience; when we're focused on the passing world we
+get only the most abstract kind of pleasure." P. 37</strong></p>
+    </div>
+
+
+    <script>
+        fetch("toolbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("toolbar-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
+</html>

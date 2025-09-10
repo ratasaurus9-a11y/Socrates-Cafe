@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desserts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toolbar-placeholder"></div>
+
+    <div class="block">
+        <h2>The Prytaneum</h2>
+    </div>
+
+    <div class="block pastel">
+        <p><strong>Would the Prytaneum have been a proper punishment for Socrates?</strong></p>
+    </div>
+
+    <div class="block">
+        <p>His request for a “penalty” for his “crimes” (he doesn’t accept the latter so the former makes no sense) is that he should receive free room
+and board at the Prytaneum, where the most celebrated victors in
+the Olympics stay. Since Socrates makes the Athenians really happy,
+whereas the Olympic victors give them a superfi cial happiness, the
+“punishment” would fi t the “crime.” P. 30</p>
+    </div>
+
+    <script>
+        fetch("toolbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("toolbar-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
+</html>

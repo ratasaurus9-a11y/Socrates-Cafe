@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cocktails</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toolbar-placeholder"></div>
+    <header>
+        <h1>Cocktails</h1>
+    </header>
+    <div>
+        <br>
+
+    </div>
+    <div class="block">
+        <h2>The Aesclipius</h2>
+        <p> <strong>What is a hospital for?</strong></p>
+        <p> "If the hospital is merely a mechanical body shop, then we live in a less than fully human world" P. 26</p>
+
+    </div>
+
+    <div class="block pastel">
+        <h2>The Crito</h2>
+        <p><strong>Should we be obedient to power or goodness?</strong></p>
+        <p>“If God asked me to kill my son, fi rst I’d question if the voice
+was God. Then I’d tell the voice to go fuck itself.” P. 21</p>
+    </div>
+
+    <div class="block">
+        <h2>The Phaedo</h2>
+        <p><strong>What happens after death?</strong></p>
+        <p>"In the Phaedo, just an hour before his death, Socrates says, “Philosophy is nothing but the preparation for death and dying.”13 (“No way
+to recruit majors,” my former professor Johanna Meehan used to say.)
+Among other things, this statement means that philosophers must
+confront the fact of their deaths and, by implication, the fact of their
+lives; for life and death are stages of one underlying cycle." P. 27</p>
+    </div>
+
+    <script>
+        fetch("toolbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("toolbar-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
+</html>
